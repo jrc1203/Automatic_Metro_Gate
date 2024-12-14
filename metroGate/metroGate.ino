@@ -1,3 +1,4 @@
+//change the rfid tag address in the 53rd line
 #include <SPI.h>
 #include <MFRC522.h>
 #include <Servo.h>
@@ -49,7 +50,7 @@ void loop()
   Serial.println();
   Serial.print("Message : ");
   content.toUpperCase();
-  if (content.substring(1) == "73 A4 A2 2E"||content.substring(1)=="F3 3A 67 97")
+  if (content.substring(1) == "73 A4 A2 2E"||content.substring(1)=="F3 3A 67 97")//change the rfid tag address here
   {
     Serial.println("Access Granted");
     Serial.println();
